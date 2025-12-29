@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/axly-web">
       <div className="app">
         <Header />
         <Routes>
