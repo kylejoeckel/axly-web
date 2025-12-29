@@ -1,0 +1,126 @@
+.compatible-devices {
+  padding: 80px 0;
+  background-color: var(--background);
+}
+
+.devices-title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.devices-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 18px;
+  margin-bottom: 48px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adapters-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.adapter-card {
+  display: flex;
+  flex-direction: column;
+  border-color: var(--border-visible);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.adapter-card:hover {
+  border-color: var(--accent-cyan);
+  transform: translateY(-4px);
+}
+
+.adapter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.adapter-header h3 {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.adapter-price {
+  color: var(--accent-green);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.adapter-description {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.adapter-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.feature-tag {
+  background-color: var(--surface-variant);
+  color: var(--text-secondary);
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.adapter-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+.compatibility-note {
+  background-color: var(--surface);
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid var(--border);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.compatibility-note h4 {
+  color: var(--accent-cyan);
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.compatibility-note ul {
+  color: var(--text-secondary);
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+.compatibility-note li {
+  margin-bottom: 8px;
+}
+
+.note-text {
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .adapters-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compatible-devices {
+    padding: 48px 0;
+  }
+}

@@ -1,6 +1,7 @@
 import Hero from '../components/Hero';
 import Features from '../components/Features';
 import AppPreview from '../components/AppPreview';
+import CompatibleDevices from '../components/CompatibleDevices';
 import './Home.css';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Features />
       <AppPreview />
+      <CompatibleDevices />
       <section className="cta-section">
         <div className="container">
           <div className="cta-card card">
